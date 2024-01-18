@@ -105,6 +105,7 @@
     margin-top: 2rem;
   }
   .options-bar-right{
+    background: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,6 +117,7 @@
     font-weight: var(--fw-b);
   }
   .select-font{
+    background: none;
     border: none;
     outline: none;
     padding: 0 1rem 0 0;
