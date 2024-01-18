@@ -53,11 +53,46 @@
     input[type="search"]::-webkit-search-results-button,
     input[type="search"]::-webkit-search-results-decoration { display: none; }
 
+  :root{
+    --ff-ss: sans-serif;
+    --ff-s: serif;
+    --ff-m: monospace;
+
+    --font-clr-light-0: #f4f4f4;
+    --font-clr-light-1: #2D2D2D;
+    --font-clr-light-2: #757575;
+    --font-clr-light-3: #A445ED;
+    --font-clr-light-4: #FF5252;
+    --font-clr-light-5: #E9E9E9;
+
+    --fw-m: 400;
+    --fw-b: 700;
+
+    --fs-xs: 0.875rem;
+    --fs-s: 1.125rem;
+    --fs-m: 1.25rem;
+    --fs-l: 1.5rem;
+    --fs-xl:4rem;
+
+
+  }
+
 
   body{
+    font-family: var(--ff-ss);
     display: flex;
     justify-content: center;
     width: 100%;
+    font-weight: var(--fw-m);
+  }
+  .ss{
+    font-family: var(--ff-ss);
+  }
+  .s{
+    font-family: var(--ff-s);
+  }
+  .m{
+    font-family: var(--ff-m);
   }
   main{
     width: 84.5%;
@@ -77,6 +112,8 @@
   .options-bar-right form{
     border-right: 1px solid #E9E9E9;
     margin-right: 1rem;
+    font-size: var(--ff-s);
+    font-weight: var(--fw-b);
   }
   .select-font{
     border: none;
@@ -91,12 +128,12 @@
     margin-right: 1rem;
     width: 2.75rem;
     height: 1.25rem;
-    background-color: #757575;
+    background-color: var(--font-clr-light-2);
     border-radius: 1rem;
   }
   .dark-light-btn-inner{
     border-radius: 50%;
-    background-color: #FFF;
+    background-color: var(--font-clr-light-0);
     width: 0.9rem;
     height: 0.9rem;
     margin-left: 0.2rem;
@@ -108,26 +145,27 @@
     margin-top: 2rem;
   }
   .search-bar-error{
-    color: #FF5252;
+    color: var(--font-clr-light-4);
   }
   .search-bar{
     display: flex;
   }
   .search-bar:focus{
-    outline: blue;
   }
   .search-bar-input{
     width: 100%;
     padding: 1rem;
-    background-color: #F4F4F4;
+    background-color: var(--font-clr-light-0);
+    color: var(--font-clr-light-1);
+    font-weight: var(--fw-b);
     border: none;
     border-radius: 1rem;
   }
   .search-bar-input:focus{
-    outline-color: #A445ED;
+    outline-color: var(--font-clr-light-3);
   }
   .search-bar-input::placeholder{
-    color: #2D2D2D;
+    color: var(--font-clr-light-1);
     opacity: .6;
   }
   .search-bar-img{
@@ -149,11 +187,12 @@
 
   }
   .main-content-word{
-    font-size: 2rem;
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-b);
   }
   .main-content-IPA{
-    font-size: 1.125rem;
-    color: #A445ED;
+    font-size: var(--fs-l);
+    color: var(--font-clr-light-3);
     margin-top: -0.25rem;
   }
   .main-content-play img{
@@ -167,7 +206,8 @@
     align-items: center;
   }
   .main-content-noun{
-    font-size: 1.5rem;
+    font-size: var(--fs-l);
+    font-weight: var(--fw-b);
     margin-right: 1rem;
     margin-bottom: 1rem;
     
@@ -175,13 +215,16 @@
   .main-content-noun-decoration{
     width: 100%;
     height: 1px;
-    border-bottom: 1px solid #E9E9E9;
+    border-bottom: 1px solid var(--font-clr-light-5);
     
   }
   .main-content-noun-meaning{
-
+    color: var(--font-clr-light-2);
+    font-size: var(--fs-m);
   }
   .main-content-noun-meaning-list {
+    color: var(--font-clr-light-1);
+    font-size: var(--fs-s);
     margin: 0rem;
     padding: 1rem;
   }
@@ -191,13 +234,18 @@
 
   .main-content-synonyms-wrapper{
     display: flex;
+    align-items: center;
   }
   .main-content-synonyms{
-    color: #757575;
+    color: var(--font-clr-light-2);
+    font-size: var(--fs-m);
     margin-right: 2rem;
   }
   .main-content-electronic-keyboard{
-    color: #A445ED;
+    color: var(--font-clr-light-3);
+    font-weight: var(--fw-b);
+    font-size: var(--fs-m);
+
   }
 
   .main-content-verb-wrapper{
@@ -208,34 +256,45 @@
     align-items: center;
   }
   .main-content-verb{
-    font-size: 1.5rem;
+    font-size: var(--fs-l);
+    color: var(--font-clr-light-1);
+    font-weight: var(--fw-b);
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
   .main-content-verb-decoration{
     width: 100%;
     height: 1px;
-    border-bottom: 1px solid #E9E9E9;
+    border-bottom: 1px solid var(--font-clr-light-5);
     
   }
-
+  .main-content-verb-meaning{
+    color: var(--font-clr-light-2);
+    font-size: var(--fs-m);
+  }
   .main-content-verb-meaning-list {
+    color: var(--font-clr-light-1);
+    font-size: var(--ff-s);
     margin: 0rem;
     padding: 1rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #E9E9E9;
-    margin-bottom: 1rem;
+    
   }
   .main-content-verb-meaning-list li{
     margin-bottom: 0.5rem;
   }
   .main-content-verb-meaning-list-example{
-    color: #757575;
+    color: var(--font-clr-light-2);
+    font-size: var(--fs-s);
+    border-bottom: 1px solid var(--font-clr-light-5);
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
   }
   .source{
     display: inline;
-    color: #757575;
-    border-bottom: 1px solid #E9E9E9;
+    color: var(--font-clr-light-2);
+    font-size: var(--fs-xs);
+    border-bottom: 1px solid var(--font-clr-light-5);
   }
   .source-link-wrapper{
     font-size: 0.875rem;
@@ -244,10 +303,19 @@
     flex-wrap: nowrap;
     margin-bottom: 4rem;
   }
+  .source-link img{
+    margin-left: 1rem;
+  }
   .source-link{
-    color: #2D2D2D;
+    color: var(--font-clr-light-1);
+    font-size: var(--fs-xs);
     margin-right: 0.5rem;
     text-decoration: underline;
+    display: flex;
+    align-items: center;
+  }
+  .hidden{
+    display: none;
   }
   
   

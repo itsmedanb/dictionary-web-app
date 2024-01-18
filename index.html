@@ -10,7 +10,7 @@
 </head>
 <body>
   <main>
-    <section class="options-bar">
+    <section class="options-bar" id="options-bar">
       <div class="options-bar-left">
         <img src="./assets/images/logo.svg" alt="">
       </div>
@@ -18,9 +18,9 @@
         <form>
           <label for="select-font"></label>
           <select name="select-font" id="select-font" class="select-font">
-            <option value="sans-serif">Sans serif</option>
-            <option value="serif">Serif</option>
-            <option value="mono">Mono</option>
+            <option value="sans-serif" class="ss">Sans serif</option>
+            <option value="serif" class="s">Serif</option>
+            <option value="mono" class="m">Mono</option>
           </select>
         </form>
         <div class="dark-light-btn-outer">
@@ -34,19 +34,20 @@
       <div class="search-bar">
         <label for="search-bar-input"></label>
         <input type="search" class="search-bar-input" id="search-bar-input" name="search-bar-input" placeholder="Search for any word..." />
-        <img class="search-bar-img" src="./assets/images/icon-search.svg" alt="">
+        <img class="search-bar-img" id="search-bar-img" src="./assets/images/icon-search.svg" alt="">
       </div>
       <div class="search-bar-error"></div>
     </section>
     
-    <section class="main-content">
+    <section class="main-content" id="main-content">
       <div class="main-content-word-group-wrapper">
         <div class="main-content-word-group">
-          <p class="main-content-word">keyboard</p>
-          <p class="main-content-IPA">/ˈkiːbɔːd/</p>
+          <p class="main-content-word" id="main-content-word"></p>
+          <p class="main-content-IPA" id="main-content-IPA"></p>
         </div>
-        <div class="main-content-play">
-          <img src="./assets/images/icon-play.svg" alt="">
+        <div class="main-content-play" id="main-content-play">
+          <img src="./assets/images/icon-play.svg" alt="" id="play-btn" value="PLAY">
+          <audio id="audio" src=""></audio>
         </div>
       </div>
       <div class="main-content-noun-wrapper">
@@ -54,10 +55,8 @@
         <div class="main-content-noun-decoration"></div>
       </div>
       <p class="main-content-noun-meaning">Meaning</p>
-      <ul class="main-content-noun-meaning-list">
-        <li>(etc.) A set of keys used to operate a typewriter, computer etc.</li>
-        <li>A component of many instruments including the piano, organ, and harpsichord consisting of usually black and white keys that cause different tones to be produced when struck.</li>
-        <li>A device with keys of a musical keyboard, used to control electronic sound-producing devices which may be built into or separate from the keyboard device.</li>
+      <ul class="main-content-noun-meaning-list" id="main-content-noun-meaning-list">
+        
       </ul>
       <div class="main-content-synonyms-wrapper">
         <p class="main-content-synonyms">Synonyms</p>
@@ -69,14 +68,16 @@
           <div class="main-content-verb-decoration"></div>
         </div>
         <p class="main-content-verb-meaning">Meaning</p>
-        <ul class="main-content-verb-meaning-list">
-          <li>To type on a computer keyboard</li>
-          <p class="main-content-verb-meaning-list-example">“Keyboarding is the part of this job I hate the most.”</p>
+        <ul class="main-content-verb-meaning-list" id="main-content-verb-meaning-list">
+          <li></li>
         </ul>
+        <p class="main-content-verb-meaning-list-example" id="main-content-verb-meaning-list-example">
+          
+        </p>
         <p class="source">Source</p>
-        <div class="source-link-wrapper">
-          <a class="source-link" href="https://en.wiktionary.org/wiki/keyboard">https://en.wiktionary.org/wiki/keyboard</a>
-          <img src="./assets/images/icon-new-window.svg" alt="" >
+        <div class="source-link-wrapper" id="source-link-wrapper">
+          <a class="source-link" href="https://en.wiktionary.org/wiki/keyboard">https://en.wiktionary.org/wiki/keyboard <img src="./assets/images/icon-new-window.svg" alt="" ></a>
+          
         </div>
       </div>
     </section>
