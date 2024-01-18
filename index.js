@@ -20,9 +20,11 @@ let optionsBar = document.getElementById("options-bar")
 mainContent.classList.add("hidden")
 optionsBar.style.marginTop = "40%"
 
-function resetCss(){
+function reset(){
     mainContent.classList.remove("hidden")
     optionsBar.style.marginTop = "2rem"
+
+    document.getElementById("audio").src=``
 }
 
 function setMainContentWord(data){
@@ -98,7 +100,7 @@ function fetchDictionaryData(){
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchBarInput.value}`)
     .then(res => res.json())
     .then(data => {
-        resetCss()
+        reset()
         setMainContentWord(data)
         setMainContentIPA(data)
         setMainContentNoun(data)
