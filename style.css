@@ -321,3 +321,151 @@
   }
   
   
+  @media (width <= 425px){
+    .select-font{
+      font-size: var(--fs-xs);
+    }
+    .search-bar-input{
+      font-size: 1rem;
+    }
+    .main-content-word{
+      font-size: 2rem;
+    }
+    .main-content-IPA{
+      margin-top: 0.25rem;
+      font-size: var(--ff-s);
+    }
+    .main-content-noun{
+      font-size: var(--fs-s);
+    }
+    .main-content-noun-meaning{
+      font-size: 1rem;
+    }
+    .main-content-noun-meaning-list{
+      font-size: 0.9375rem;
+    }
+    .main-content-synonyms{
+      font-size: 1rem;
+    }
+    .main-content-electronic-keyboard{
+      font-size: 1rem;
+    }
+    .main-content-verb{
+      font-size: var(--fs-s);
+    }
+    .main-content-verb-meaning{
+      font-size: 1rem;
+    }
+    .main-content-verb-meaning-list{
+      font-size: 0.9375rem;
+    }
+    .main-content-verb-meaning-list-example{
+      font-size: 0.9375rem;
+    }
+    .source{
+      font-size: var(--fs-xs);
+    }
+    .source-link{
+      font-size: var(--fs-xs);
+    }
+  }
+
+  @media (width >= 426px){
+    .select-font{
+      font-size: var(--fs-s);
+    }
+    .search-bar-input{
+      font-size: var(--fs-m);
+    }
+    .main-content-word{
+      font-size: var(--fs-xl);
+    }
+    .main-content-IPA{
+      margin-top: 0.25rem;
+      font-size: 1.5rem;
+    }
+    .main-content-noun{
+      font-size: 1.5rem;
+    }
+    .main-content-noun-meaning{
+      font-size: 1.25rem;
+    }
+    .main-content-noun-meaning-list{
+      font-size: 1.125rem;
+    }
+    .main-content-synonyms{
+      font-size: 1.25rem;
+    }
+    .main-content-electronic-keyboard{
+      font-size: 1.25rem;
+    }
+    .main-content-verb{
+      font-size: 1.5rem;
+    }
+    .main-content-verb-meaning{
+      font-size: 1.25rem;
+    }
+    .main-content-verb-meaning-list{
+      font-size: 1.125rem;
+    }
+    .main-content-verb-meaning-list-example{
+      font-size: 1.125rem;
+    }
+    .source{
+      font-size: var(--fs-xs);
+    }
+    .source-link{
+      font-size: var(--fs-xs);
+    }
+  }
+
+  @media (width >= 1024px){
+    .select-font{
+      font-size: 1.125rem;
+    }
+    .search-bar-input{
+      font-size: 1.125rem;
+    }
+    .main-content-word{
+      font-size: 4rem;
+    }
+    .main-content-IPA{
+      margin-top: 0.25rem;
+      font-size: 1.5rem;
+    }
+    .main-content-noun{
+      font-size: 1.5rem;
+    }
+    .main-content-noun-meaning{
+      font-size: 1.25rem;
+    }
+    .main-content-noun-meaning-list{
+      font-size: 1.125rem;
+    }
+    .main-content-synonyms{
+      font-size: 1.25rem;
+    }
+    .main-content-electronic-keyboard{
+      font-size: 1.25rem;
+    }
+    .main-content-verb{
+      font-size: 1.5rem;
+    }
+    .main-content-verb-meaning{
+      font-size: 1.25rem;
+    }
+    .main-content-verb-meaning-list{
+      font-size: 1.125rem;
+    }
+    .main-content-verb-meaning-list-example{
+      font-size: 1.125rem;
+    }
+    .source{
+      font-size: var(--fs-xs);
+    }
+    .source-link{
+      font-size: var(--fs-xs);
+    }
+  }
+
+ 
