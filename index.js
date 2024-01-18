@@ -24,6 +24,7 @@ let optionsBar = document.getElementById("options-bar")
 let darkLightBtn = document.getElementById("dark-light-btn-outer")
 let darkLightBtnInner = document.getElementById("dark-light-btn-inner")
 
+
 mainContent.classList.add("hidden")
 optionsBar.style.marginTop = "40%"
 
@@ -193,6 +194,7 @@ selectFont.addEventListener("change", function(){
 
 function setDarkLightMode(){
     document.body.classList.toggle("dark-bg")
+    selectFont.classList.toggle("dark-color-1")
     searchBarInput.classList.toggle("dark-color-1")
     searchBarInput.classList.toggle("dark-search-bg")
     searchBarInput.classList.toggle("dark-placeholder")
