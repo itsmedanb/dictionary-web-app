@@ -6,7 +6,9 @@ let mainContentNounMeaningList = document.getElementById("main-content-noun-mean
 let mainContentVerbMeaningList = document.getElementById("main-content-verb-meaning-list")
 let mainContentVerbMeaningListExample = document.getElementById("main-content-verb-meaning-list-example")
 let sourceLink = document.getElementById("source-link-wrapper")
+let sourceLinkA = document.getElementById("source-link")
 let mainContentPlay = document.getElementById("main-content-play")
+let mainContentVerb = document.getElementById("main-content-verb")
 let playBtn = document.getElementById("play-btn")
 let selectFont = document.getElementById("select-font")
 let nounMeanings = ''
@@ -19,6 +21,8 @@ let hasVerbMeanings = false
 let phoneticsAudio = ''
 let mainContent = document.getElementById("main-content")
 let optionsBar = document.getElementById("options-bar")
+let darkLightBtn = document.getElementById("dark-light-btn-outer")
+let darkLightBtnInner = document.getElementById("dark-light-btn-inner")
 
 mainContent.classList.add("hidden")
 optionsBar.style.marginTop = "40%"
@@ -102,7 +106,7 @@ function setPhoneticsAudio(data){
 
 function setSourceLink(data){
     sourceLink.innerHTML = `
-    <a class="source-link" href="${data[0].sourceUrls[0]}">${data[0].sourceUrls[0]}</a>
+    <a id="source-link" class="source-link" href="${data[0].sourceUrls[0]}">${data[0].sourceUrls[0]}</a>
     <img src="./assets/images/icon-new-window.svg" alt="" >
     `
 }
@@ -187,15 +191,29 @@ selectFont.addEventListener("change", function(){
     }
 })
 
+function setDarkLightMode(){
+    document.body.classList.toggle("dark-bg")
+    searchBarInput.classList.toggle("dark-color-1")
+    searchBarInput.classList.toggle("dark-search-bg")
+    searchBarInput.classList.toggle("dark-placeholder")
+    mainContentWord.classList.toggle("dark-color-1")
+    mainContentNounMeaningList.classList.toggle("dark-color-1")
+    mainContentVerb.classList.toggle("dark-color-1")
+    mainContentVerbMeaningList.classList.toggle("dark-color-1")
+    document.getElementById("source-link").classList.toggle("dark-color-1")
+    darkLightBtn.classList.toggle("dark-light-btn-outer-switch")
+    darkLightBtnInner.classList.toggle("dark-light-btn-inner-switch")
+}
 
-// synonyms.addEventListener("click", function(){
-//     if(synonyms.textContent == "Synonyms"){
-//         synonyms.textContent = "Verbs"
-//         document.getElementById("main-content-verb").textContent = "synonyms"
-//         document.getElementById("main-content-verb-meaning").textContent = ''
-//         document.getElementById("main-content-verb-meaning-list").innerHTML = synonymsData
-//     }
-//     if(synonyms.textContent == "Verbs"){
+document.getElementById("dark-light-btn-outer").addEventListener("click", function(){
+    
+    
+    if(document.body.classList == "dark-bg"){
+        setDarkLightMode()
+    }else{
+       setDarkLightMode()
+    }
+    
+    
+})
 
-//     }
-// })
