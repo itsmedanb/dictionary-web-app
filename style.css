@@ -278,6 +278,7 @@
     color: var(--font-clr-light-2);
     font-size: var(--fs-m);
     margin-right: 2rem;
+    border-bottom: 1px solid white;
   }
   
   .main-content-electronic-keyboard{
