@@ -278,9 +278,13 @@
     color: var(--font-clr-light-2);
     font-size: var(--fs-m);
     margin-right: 2rem;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #acacac;
   }
-  
+  .main-content-synonyms-dark{
+    
+    border-bottom: 1px solid white;
+    
+  }
   .main-content-electronic-keyboard{
     color: var(--font-clr-light-3);
     font-weight: var(--fw-b);

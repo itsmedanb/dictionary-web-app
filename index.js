@@ -205,6 +205,7 @@ function setDarkLightMode(){
     document.getElementById("source-link").classList.toggle("dark-color-1")
     darkLightBtn.classList.toggle("dark-light-btn-outer-switch")
     darkLightBtnInner.classList.toggle("dark-light-btn-inner-switch")
+    synonyms.classList.toggle("main-content-synonyms-dark")
 }
 
 document.getElementById("dark-light-btn-outer").addEventListener("click", function(){
