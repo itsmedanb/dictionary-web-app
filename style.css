@@ -87,6 +87,8 @@
   }
   .ss{
     font-family: var(--ff-ss);
+    color: white;
+    background-color: black;
   }
   .s{
     font-family: var(--ff-s);
@@ -365,7 +367,8 @@
     color: #FFFFFF;
   }
   .dark-color-2{
-    columns: #757575;
+    color: white;
+    background-color: black;
   }
   .dark-placeholder::placeholder{
     color: #FFF;

@@ -194,7 +194,7 @@ selectFont.addEventListener("change", function(){
 
 function setDarkLightMode(){
     document.body.classList.toggle("dark-bg")
-    selectFont.classList.toggle("dark-color-1")
+    selectFont.classList.toggle("dark-color-2")
     searchBarInput.classList.toggle("dark-color-1")
     searchBarInput.classList.toggle("dark-search-bg")
     searchBarInput.classList.toggle("dark-placeholder")
